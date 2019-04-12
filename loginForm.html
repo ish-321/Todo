@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #mainDiv{
+        margin-top: 50px;
+        border-bottom: 2px solid black;
+        padding-bottom: 50px;
+        background-color: white;
+        width: 250px; 
+        padding-top: 50px;
+        border-radius: 10px;
+
+    }
+    input{
+        border-color: green;
+    }
+    body{
+          background-color: rgb(50, 224, 102);
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    button{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        background-color: rgb(181, 231, 105);
+
+        border-radius: 6px;
+        padding: 3px;
+        font-weight: bold;
+ 
+    }
+#email{
+    font-size: 18px;
+}
+#password{
+    font-size: 18px;
+}
+    </style>
+</head>
+<body>
+  <center> 
+        <h2>Sign Up log In Form</h2> 
+      <div id="mainDiv">
+    <label>User Email:</label><br> <input type="email" name="email" id="email" ><br><br><br>
+    <label>Password:</label><br> <input type="password" name="password" id="password"><br><br><br><br>
+    <button onclick="signup()" >Sign Up</button>
+    <button onclick="login()">Log In</button>
+    
+    <div id="message">
+    </div>
+</div>
+</center>
+</body>
+<script src="logForm.js"></script>
+</html>

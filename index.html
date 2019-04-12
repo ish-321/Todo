@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<style>
+input{
+border-radius: 10px;
+}
+#serch{
+    width: 90px;
+
+
+}
+
+</style>
+<body style="background-color: rgb(223, 226, 43)">
+
+<div style="margin-left:40%;margin-top:10%;" >
+<h2 style="color:white;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-left: 20px;">INPUT FORM FOR STUDENTS</h2>
+<form>
+<div class="form-row">
+<div class="col-md-3 mb-3">
+<label for="validationDefault01">First name</label>
+<input type="text" class="form-control" id="validationDefault01"  placeholder="First name"  required >
+</div>
+<div class="col-md-3 mb-3">
+<label for="validationDefault02">Inter Id</label>
+<input type="text" class="form-control" id="validationDefault02" placeholder="Inter Id" required>
+</div> 
+</div>
+<div class="form-row">
+<div class="col-md-3 mb-3">
+<label for="validationDefault01">Sindhi</label>
+<input type="text" class="form-control" id="validationDefault03"  placeholder="Enter Sindhi Marks" required>
+</div>
+<div class="col-md-3 mb-3">
+<label for="validationDefault02">Urdu</label>
+<input type="text" class="form-control" id="validationDefault04"  placeholder="Enter Urdu Marks"  required>
+</div> 
+</div>
+<div class="form-row">
+<div class="col-md-3 mb-3">
+<label for="validationDefault01">Math</label>
+<input type="text" class="form-control" id="validationDefault05"  placeholder="Enter Maths Marks" required>
+</div>
+<div class="col-md-3 mb-3">
+<label for="validationDefault02">Chemistry</label>
+<input type="text" class="form-control" id="validationDefault06"  placeholder="Enter Chemistry Marks" required>
+</div> 
+</div>
+<div class="form-row">
+<div class="col-md-3 mb-3">
+<label for="validationDefault01">Ethics</label>
+<input type="text" class="form-control" id="validationDefault07" placeholder="Enter Ethics Marks"  required>
+</div>
+<div class="col-md-3 mb-3">
+<label for="validationDefault02">Genral Knowledge</label>
+<input type="text" class="form-control" id="validationDefault08"  placeholder="Enter GK Marks" required>
+</div> 
+</div>                   
+<div >
+<div >
+<button type="button" class="btn btn-outline-primary" style="background-color:golds" onclick="cons()">Submit</button>
+</div>
+</div>
+</form>
+</div><br>
+<center> 
+<input type="text" id="sid" >
+<input type="button" value="Search" id="serch" onclick="search()">
+</center>
+<center>  
+<label>First name</label><br>
+<input type="text"  id="one"  placeholder="First name"><br>
+<label>Id Number</label><br>
+<input type="text"  id="two"  placeholder="Id Number"><br>
+<label>Sindhi</label><br>
+<input type="text"  id="three"  placeholder="Sindhi"><br>
+<label>Urdu</label><br>
+<input type="text"  id="four"  placeholder="Urdu"><br>
+<label>Maths</label><br>
+<input type="text"  id="five"  placeholder="Maths"><br>
+<label>Chemistry</label><br>
+<input type="text"  id="six"  placeholder="Chemistry"><br>
+<label>Ethics</label><br>
+<input type="text"  id="seven"  placeholder="Ethics"><br>
+<label>Genral Knowledge</label><br>
+<input type="text"  id="eight"  placeholder="GK"><br>
+<label>Total Percentage</label><br>
+<input type="text"  id="nine"  placeholder="Percentage"><br>
+</center>
+<label id="label">
+</label>
+<input type="button" value="logout" onclick="logout()">        
+<script src="app.js"></script>
+</body>
+</html>
